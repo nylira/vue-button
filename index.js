@@ -1,2 +1,2 @@
-var component = require('./component.vue')
+var component = require('./src/index.vue')
 module.exports = component
