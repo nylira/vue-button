@@ -1,0 +1,24 @@
+{
+  "name": "vue-button",
+  "version": "1.0.0",
+  "description": "Button component for Vue projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nylira/vue-button.git"
+  },
+  "keywords": [
+    "button",
+    "vue",
+    "component"
+  ],
+  "author": "Peng Zhong <peng@nylira.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nylira/vue-button/issues"
+  },
+  "homepage": "https://github.com/nylira/vue-button#readme"
+}
