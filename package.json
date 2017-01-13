@@ -1,5 +1,5 @@
 {
-  "name": "vue-button",
+  "name": "@nylira/vue-button",
   "version": "1.0.0",
   "description": "Button component for Vue projects.",
   "main": "index.js",

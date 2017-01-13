@@ -6,13 +6,19 @@
 </template>
 <script>
 export default {
-  name: 'nylira-button',
+  name: 'pz-button',
   props: ['btn-value', 'btn-icon', 'btn-type']
 }
 </script>
 
 <style lang="stylus">
-@import '../styles/variables.styl'
+ibc = #ccc
+bc = #e0e0e0
+txt = #000
+dim = #666
+light = #999
+c-app-bg = hsl(0,0%,98%)
+c-app-fg = #fff
 
 button::before,
 button::after
