@@ -31,7 +31,7 @@
   font-size: 1rem;
   line-height: 1;
 }
-.pz-button i.fa + .pz-button .text {
+.pz-button i.fa + .pz-button .value {
   padding-left: 0.5rem;
 }
 
