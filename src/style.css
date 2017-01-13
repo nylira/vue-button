@@ -27,6 +27,14 @@
   text-decoration: none;
 }
 
+.pz-button i.fa {
+  font-size: 1rem;
+  line-height: 1;
+}
+.pz-button i.fa + .pz-button .text {
+  padding-left: 0.5rem;
+}
+
 .pz-button.disabled, .pz-button[disabled] {
   opacity: 0.333;
   cursor: not-allowed;
