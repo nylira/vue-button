@@ -1,4 +1,4 @@
-.pz-button::before,.pz-button::after {
+.pz-button:before, .pz-button:after {
   content: '';
   flex: 1 0 auto;
 }
@@ -11,7 +11,6 @@
   padding 0 0.75em;
   margin 0;
 
-  font-family: sans-serif;
   font-weight 400;
   height 2em;
   line-height 1;
