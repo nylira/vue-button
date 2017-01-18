@@ -19,7 +19,7 @@ export default {
     },
     type () {
       if (this.btnType) return this.btnType
-      else return 'submit'
+      else return 'button'
     }
   },
   props: ['btn-value', 'btn-icon', 'btn-type', 'btn-size', 'btn-style']

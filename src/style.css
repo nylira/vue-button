@@ -78,11 +78,11 @@
 
 .pz-button.pz-style-alpha-black {
   color: #fff;
-  background: hsla(0,0,0,0.2);
+  background: hsla(0,0%,0%,0.2);
   border: none;
 }
-.pz-button.pz-style-alpha-black:hover { background: hsla(0,0,0,0.3); }
-.pz-button.pz-style-alpha-black:active { background: hsla(0,0,0,0.4); }
+.pz-button.pz-style-alpha-black:hover { background: hsla(0,0%,0%,0.3); }
+.pz-button.pz-style-alpha-black:active { background: hsla(0,0%,0%,0.4); }
 
 .pz-button.pz-style-tendermint {
   color: #fff;
