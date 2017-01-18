@@ -16,8 +16,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   -webkit-appearance: none;
-  text-align: center;
 }
 
 .pz-button:hover {
