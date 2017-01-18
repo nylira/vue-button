@@ -75,3 +75,11 @@
   font-weight: normal;
   padding: 0 1em;
 }
+
+.pz-button.pz-color-alpha-black { background: hsla(0,0,0,0.2) }
+.pz-button.pz-color-alpha-black:hover { background: hsla(0,0,0,0.3) }
+.pz-button.pz-color-alpha-black:active { background: hsla(0,0,0,0.4) }
+
+.pz-button.pz-color-tendermint { background: hsl(210,70%,38%) }
+.pz-button.pz-color-tendermint:hover { background: hsl(210,70%,43%) }
+.pz-button.pz-color-tendermint:active { background: hsl(210,70%,8%) }
