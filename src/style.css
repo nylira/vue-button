@@ -9,7 +9,6 @@
   
   background: #fff;
   border: 1px solid #ccc;
-  box-shadow: inset hsla(0,0,100%,0.5) 0 0 0.5rem;
 
   cursor: pointer;
   user-select: none;
@@ -22,7 +21,6 @@
 }
 
 .pz-button:hover {
-  box-shadow: inset #fff 0 0 0.75rem;
   color: #000;
   text-decoration: none;
 }
@@ -48,13 +46,11 @@
 .pz-button.pz-button-link {
   border-color: transparent;
   background: transparent;
-  box-shadow: none;
   color: #0c9;
   padding: 0 0.5rem;
 }
 .pz-button.pz-button-link:hover {
   background: transparent;
-  box-shadow: none;
 }
 
 .pz-button.pz-button-small {
@@ -89,5 +85,7 @@
   background: hsl(210,70%,38%);
   border: none;
 }
-.pz-button.pz-style-tendermint:hover { background: hsl(210,70%,43%); }
+.pz-button.pz-style-tendermint:hover {
+  background: hsl(210,70%,43%);
+}
 .pz-button.pz-style-tendermint:active { background: hsl(210,70%,8%); }
