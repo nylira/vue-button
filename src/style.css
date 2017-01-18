@@ -16,13 +16,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
   -webkit-appearance: none;
 }
 
 .pz-button:hover {
   color: #000;
   text-decoration: none;
+}
+
+.pz-button-icon, .pz-button-value {
+  display: block
 }
 
 .pz-button-icon {
