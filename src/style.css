@@ -1,15 +1,15 @@
 .pz-button {
   font-size: 16px;
   font-weight: 400;
-  height: 2em;
+  height: 2rem;
   line-height: 1;
 
-  padding: 0 0.75em;
+  padding: 0 0.75rem;
   margin: 0;
   
   background: #fff;
   border: 1px solid #ccc;
-  box-shadow: inset hsla(0,0,100%,0.5) 0 0 0.5em;
+  box-shadow: inset hsla(0,0,100%,0.5) 0 0 0.5rem;
 
   cursor: pointer;
   user-select: none;
@@ -22,17 +22,17 @@
 }
 
 .pz-button:hover {
-  box-shadow: inset #fff 0 0 0.75em;
+  box-shadow: inset #fff 0 0 0.75rem;
   color: #000;
   text-decoration: none;
 }
 
 .pz-button i.fa {
-  font-size: 1rem;
+  font-size: 1rrem;
   line-height: 1;
 }
 .pz-button i.fa + .pz-button .value {
-  padding-left: 0.5rem;
+  padding-left: 0.5rrem;
 }
 
 .pz-button.disabled, .pz-button[disabled] {
@@ -50,7 +50,7 @@
   background: transparent;
   box-shadow: none;
   color: #0c9;
-  padding: 0 0.5em;
+  padding: 0 0.5rem;
 }
 .pz-button.pz-button-link:hover {
   background: transparent;
@@ -58,28 +58,34 @@
 }
 
 .pz-button.pz-button-small {
-  height: 1.5em;
-  font-size: 0.75em;
-  line-height: 1em;
-  padding: 0 1em;
+  height: 1.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0 1rem;
 }
 
 .pz-button.pz-button-small i.fa {
-  font-size: 0.75em;
+  font-size: 0.75rem;
   line-height: 1;
 }
 
 .pz-button.pz-button-large {
-  height: 3em;
-  font-size: 1.25em;
+  height: 3rem;
+  font-size: 1.25rem;
   font-weight: normal;
-  padding: 0 1em;
+  padding: 0 1rem;
 }
 
-.pz-button.pz-color-alpha-black { background: hsla(0,0,0,0.2) }
-.pz-button.pz-color-alpha-black:hover { background: hsla(0,0,0,0.3) }
-.pz-button.pz-color-alpha-black:active { background: hsla(0,0,0,0.4) }
+.pz-button.pz-color-alpha-black {
+  color: #fff;
+  background: hsla(0,0,0,0.2)
+}
+.pz-button.pz-color-alpha-black:hover { background: hsla(0,0,0,0.3); }
+.pz-button.pz-color-alpha-black:active { background: hsla(0,0,0,0.4); }
 
-.pz-button.pz-color-tendermint { background: hsl(210,70%,38%) }
-.pz-button.pz-color-tendermint:hover { background: hsl(210,70%,43%) }
-.pz-button.pz-color-tendermint:active { background: hsl(210,70%,8%) }
+.pz-button.pz-color-tendermint {
+  color: #fff;
+  background: hsl(210,70%,38%);
+}
+.pz-button.pz-color-tendermint:hover { background: hsl(210,70%,43%); }
+.pz-button.pz-color-tendermint:active { background: hsl(210,70%,8%); }

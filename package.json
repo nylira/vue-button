@@ -1,6 +1,6 @@
 {
   "name": "@nylira/vue-button",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "Button component for Vue 2.",
   "main": "index.js",
   "scripts": {
