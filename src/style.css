@@ -26,11 +26,11 @@
 }
 
 .pz-button i.fa {
-  font-size: 1rrem;
+  font-size: 1rem;
   line-height: 1;
 }
 .pz-button i.fa + .pz-button .value {
-  padding-left: 0.5rrem;
+  padding-left: 0.5rem;
 }
 
 .pz-button.disabled, .pz-button[disabled] {
