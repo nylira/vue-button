@@ -1,7 +1,7 @@
 <template>
   <button :class="btnClass" :type="type">
-    <i v-if="btnIcon" :class="'fa fa-' + btnIcon" aria-hidden="true"></i>
-    <span class="value" v-if="btnValue">{{ btnValue }}</span>
+    <i v-if="btnIcon" :class="'pz-button-icon fa fa-' + btnIcon" aria-hidden="true"></i>
+    <span class="pz-button-value" v-if="btnValue">{{ btnValue }}</span>
   </button> 
 </template>
 
