@@ -76,16 +76,16 @@
   padding: 0 1rem;
 }
 
-.pz-button.pz-color-alpha-black {
+.pz-button.pz-style-alpha-black {
   color: #fff;
   background: hsla(0,0,0,0.2)
 }
-.pz-button.pz-color-alpha-black:hover { background: hsla(0,0,0,0.3); }
-.pz-button.pz-color-alpha-black:active { background: hsla(0,0,0,0.4); }
+.pz-button.pz-style-alpha-black:hover { background: hsla(0,0,0,0.3); }
+.pz-button.pz-style-alpha-black:active { background: hsla(0,0,0,0.4); }
 
-.pz-button.pz-color-tendermint {
+.pz-button.pz-style-tendermint {
   color: #fff;
   background: hsl(210,70%,38%);
 }
-.pz-button.pz-color-tendermint:hover { background: hsl(210,70%,43%); }
-.pz-button.pz-color-tendermint:active { background: hsl(210,70%,8%); }
+.pz-button.pz-style-tendermint:hover { background: hsl(210,70%,43%); }
+.pz-button.pz-style-tendermint:active { background: hsl(210,70%,8%); }

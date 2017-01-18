@@ -13,6 +13,8 @@ export default {
       let value = 'pz-button'
       if (this.btnSize === 'large') value += ' pz-button-large'
       if (this.btnSize === 'small') value += ' pz-button-small'
+      if (this.btnStyle === 'alpha-black') value += ' pz-style-alpha-black'
+      if (this.btnStyle === 'tendermint') value += ' pz-style-tendermint'
       return value
     },
     type () {
@@ -20,7 +22,7 @@ export default {
       else return 'submit'
     }
   },
-  props: ['btn-value', 'btn-icon', 'btn-type', 'btn-size']
+  props: ['btn-value', 'btn-icon', 'btn-type', 'btn-size', 'btn-style']
 }
 </script>
 
