@@ -1,3 +1,8 @@
+.pz-button::before,
+.pz-button::after {
+    content: '';
+    flex: 1 0 auto;
+}
 .pz-button {
   font-size: 16px;
   font-weight: 400;
@@ -22,10 +27,6 @@
 .pz-button:hover {
   color: #000;
   text-decoration: none;
-}
-
-.pz-button-icon, .pz-button-value {
-  display: block
 }
 
 .pz-button-icon {
