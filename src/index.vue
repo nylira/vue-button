@@ -11,6 +11,7 @@ export default {
   computed: {
     btnClass () {
       let value = 'pz-button'
+      if (this.btnIconPosition === 'right') value += ' pz-button-icon-right'
       if (this.btnSize === 'large') value += ' pz-button-large'
       if (this.btnSize === 'small') value += ' pz-button-small'
       if (this.btnStyle === 'alpha-black') value += ' pz-style-alpha-black'
@@ -22,7 +23,7 @@ export default {
       else return 'button'
     }
   },
-  props: ['btn-value', 'btn-icon', 'btn-type', 'btn-size', 'btn-style']
+  props: ['btn-value', 'btn-icon', 'btn-type', 'btn-size', 'btn-style', 'btn-icon-position']
 }
 </script>
 

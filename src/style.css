@@ -47,6 +47,15 @@
   outline: none;
 }
 
+/* right aligned icons */
+.pz-button.pz-button-icon-right {
+  flex-direction: row-reverse;
+}
+.pz-button.pz-button-icon-right .pz-button-icon + .pz-button-value {
+  padding-left: 0;
+  padding-right: 0.5rem;
+}
+
 .pz-button.pz-button-link {
   border-color: transparent;
   background: transparent;
