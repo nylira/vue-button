@@ -1,3 +1,10 @@
+.pz-button-wrapper {
+  padding: 0;
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+  margin: 0;
+}
 .pz-btn::before,
 .pz-btn::after {
     content: '';
