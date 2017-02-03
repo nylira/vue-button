@@ -1,9 +1,9 @@
-.pz-button::before,
-.pz-button::after {
+.pz-btn::before,
+.pz-btn::after {
     content: '';
     flex: 1 0 auto;
 }
-.pz-button {
+.pz-btn {
   font-size: 16px;
   font-weight: 400;
   height: 2rem;
@@ -24,81 +24,81 @@
   -webkit-appearance: none;
 }
 
-.pz-button:hover {
+.pz-btn:hover {
   color: #000;
   text-decoration: none;
 }
 
-.pz-button-icon {
+.pz-btn-icon {
   font-size: 1rem;
   line-height: 1;
 }
-.pz-button-icon + .pz-button-value {
+.pz-btn-icon + .pz-btn-value {
   padding-left: 0.5rem;
 }
 
-.pz-button.disabled, .pz-button[disabled] {
+.pz-btn.disabled, .pz-btn[disabled] {
   opacity: 0.333;
   cursor: not-allowed;
   user-select: none;
   color: #999;
 }
-.pz-button.disabled:focus, .pz-button[disabled]:focus {
+.pz-btn.disabled:focus, .pz-btn[disabled]:focus {
   outline: none;
 }
 
 /* right aligned icons */
-.pz-button.pz-button-icon-right {
+.pz-btn.pz-btn-icon-right {
   flex-direction: row-reverse;
 }
-.pz-button.pz-button-icon-right .pz-button-icon + .pz-button-value {
+.pz-btn.pz-btn-icon-right .pz-btn-icon + .pz-btn-value {
   padding-left: 0;
   padding-right: 0.5rem;
 }
 
-.pz-button.pz-button-link {
+.pz-btn.pz-btn-link {
   border-color: transparent;
   background: transparent;
   color: #0c9;
   padding: 0 0.5rem;
 }
-.pz-button.pz-button-link:hover {
+.pz-btn.pz-btn-link:hover {
   background: transparent;
 }
 
-.pz-button.pz-button-small {
+.pz-btn.pz-btn-small {
   height: 1.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
   padding: 0 1rem;
 }
 
-.pz-button.pz-button-small i.fa {
+.pz-btn.pz-btn-small i.fa {
   font-size: 0.75rem;
   line-height: 1;
 }
 
-.pz-button.pz-button-large {
+.pz-btn.pz-btn-large {
   height: 3rem;
   font-size: 1.125rem;
   font-weight: normal;
   padding: 0 1rem;
 }
 
-.pz-button.pz-style-alpha-black {
+.pz-btn.pz-theme-alpha-black {
   color: #fff;
   background: hsla(0,0%,0%,0.2);
   border: none;
 }
-.pz-button.pz-style-alpha-black:hover { background: hsla(0,0%,0%,0.3); }
-.pz-button.pz-style-alpha-black:active { background: hsla(0,0%,0%,0.4); }
+.pz-btn.pz-theme-alpha-black:hover { background: hsla(0,0%,0%,0.3); }
+.pz-btn.pz-theme-alpha-black:active { background: hsla(0,0%,0%,0.4); }
 
-.pz-button.pz-style-tendermint {
+.pz-btn.pz-theme-tendermint {
   color: #fff;
   background: hsl(210,70%,38%);
   border: none;
 }
-.pz-button.pz-style-tendermint:hover {
+.pz-btn.pz-theme-tendermint:hover {
   background: hsl(210,70%,43%);
 }
-.pz-button.pz-style-tendermint:active { background: hsl(210,70%,8%); }
+.pz-btn.pz-theme-tendermint:active { background: hsl(210,70%,8%); }

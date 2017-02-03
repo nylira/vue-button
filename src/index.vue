@@ -1,29 +1,31 @@
 <template>
-  <button :class="btnClass" :type="type">
-    <i v-if="btnIcon" :class="'pz-button-icon fa fa-' + btnIcon" aria-hidden="true"></i>
-    <span class="pz-button-value" v-if="btnValue">{{ btnValue }}</span>
+  <button class="pz-btn-wrapper" :type="btnType">
+    <span :class="btnClass">
+      <i v-if="btnIcon" :class="'pz-btn-icon fa fa-' + btnIcon" aria-hidden="true"></i>
+      <span class="pz-btn-value" v-if="value">{{ value }}</span>
+    </span>
   </button> 
 </template>
 
 <script>
 export default {
-  name: 'pz-button',
+  name: 'pz-btn',
   computed: {
     btnClass () {
-      let value = 'pz-button'
-      if (this.btnIconPosition === 'right') value += ' pz-button-icon-right'
-      if (this.btnSize === 'large') value += ' pz-button-large'
-      if (this.btnSize === 'small') value += ' pz-button-small'
-      if (this.btnStyle === 'alpha-black') value += ' pz-style-alpha-black'
-      if (this.btnStyle === 'tendermint') value += ' pz-style-tendermint'
+      let value = 'pz-btn'
+      if (this.IconPos === 'right') value += ' pz-btn-icon-right'
+      if (this.size === 'large') value += ' pz-btn-large'
+      if (this.size === 'small') value += ' pz-btn-small'
+      if (this.theme === 'alpha-black') value += ' pz-theme-alpha-black'
+      if (this.theme === 'tendermint') value += ' pz-theme-tendermint'
       return value
     },
-    type () {
-      if (this.btnType) return this.btnType
+    btnType () {
+      if (this.type) return this.type
       else return 'button'
     }
   },
-  props: ['btn-value', 'btn-icon', 'btn-type', 'btn-size', 'btn-style', 'btn-icon-position']
+  props: ['value', 'icon', 'icon-pos', 'type', 'size', 'theme']
 }
 </script>
 
