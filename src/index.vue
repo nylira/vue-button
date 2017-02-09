@@ -14,8 +14,8 @@ export default {
     btnClass () {
       let value = 'ni-btn'
       if (this.iconPos === 'right') value += ' ni-btn-icon-right'
-      if (this.size === 'large') value += ' ni-btn-large'
-      if (this.size === 'small') value += ' ni-btn-small'
+      if (this.size === 'lg') value += ' ni-btn-large'
+      if (this.size === 'sm') value += ' ni-btn-small'
       if (this.theme === 'alpha-black') value += ' ni-theme-alpha-black'
       if (this.theme === 'tendermint') value += ' ni-theme-tendermint'
       return value
