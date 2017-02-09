@@ -33,7 +33,7 @@ Button component for Vue 2.
 
     value=""
     // The label of the button
-    // Options: Any valid string"
+    // Options: Any valid string
 
     icon=""
     // If you're using FontAwesome, places an icon to the left of the label
