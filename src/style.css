@@ -13,10 +13,10 @@
 .ni-btn {
   font-size: 16px;
   font-weight: 400;
-  height: 2rem;
+  height: 2em;
   line-height: 1;
 
-  padding: 0 0.75rem;
+  padding: 0 0.75em;
   margin: 0;
   
   background: #fff;
@@ -37,11 +37,11 @@
 }
 
 .ni-btn-icon {
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 1;
 }
 .ni-btn-icon + .ni-btn-value {
-  padding-left: 0.5rem;
+  padding-left: 0.5em;
 }
 
 .ni-btn.disabled, .ni-btn[disabled] {
@@ -60,36 +60,36 @@
 }
 .ni-btn.ni-btn-icon-right .ni-btn-icon + .ni-btn-value {
   padding-left: 0;
-  padding-right: 0.5rem;
+  padding-right: 0.5em;
 }
 
 .ni-btn.ni-btn-link {
   border-color: transparent;
   background: transparent;
   color: #0c9;
-  padding: 0 0.5rem;
+  padding: 0 0.5em;
 }
 .ni-btn.ni-btn-link:hover {
   background: transparent;
 }
 
 .ni-btn.ni-btn-small {
-  height: 1.5rem;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0 1rem;
+  height: 1.5em;
+  font-size: 0.75em;
+  line-height: 1em;
+  padding: 0 1em;
 }
 
 .ni-btn.ni-btn-small i.fa {
-  font-size: 0.75rem;
+  font-size: 0.75em;
   line-height: 1;
 }
 
 .ni-btn.ni-btn-large {
-  height: 3rem;
-  font-size: 1.125rem;
+  height: 3em;
+  font-size: 1.125em;
   font-weight: normal;
-  padding: 0 1rem;
+  padding: 0 1em;
 }
 
 .ni-btn.ni-theme-alpha-black {
