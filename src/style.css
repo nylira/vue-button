@@ -74,22 +74,22 @@
 }
 
 .ni-btn.ni-btn-small {
-  height: 1.5em;
   font-size: 0.75em;
-  line-height: 1em;
-  padding: 0 1em;
+  height: 1.5rem;
+  line-height: 1rem;
+  padding: 0 1rem;
 }
 
 .ni-btn.ni-btn-small i.fa {
-  font-size: 0.75em;
+  font-size: 0.75rem;
   line-height: 1;
 }
 
 .ni-btn.ni-btn-large {
-  height: 3em;
   font-size: 1.125em;
+  height: 3rem;
   font-weight: normal;
-  padding: 0 1em;
+  padding: 0 1rem;
 }
 
 .ni-btn.ni-theme-alpha-black {
