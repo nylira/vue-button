@@ -123,9 +123,11 @@
   text-transform: uppercase;
 }
 .ni-btn:hover .ni-btn-container.ni-btn-theme-cosmos,
-.ni-btn:focus .ni-btn-container.ni-btn-theme-cosmos,
+.ni-btn:focus .ni-btn-container.ni-btn-theme-cosmos {
+  border-color: hsl(210,26%,36%);
+}
 .ni-btn:active .ni-btn-container.ni-btn-theme-cosmos,
 .ni-btn.router-link-active .ni-btn-container.ni-btn-theme-cosmos {
-  color: hsl(210,32%,86%);
+  color: hsl(210,32%,86%) !important;
   border-color: hsl(210,26%,36%);
 }
