@@ -122,10 +122,10 @@
   padding: 0 1rem;
   text-transform: uppercase;
 }
-.ni-btn-container.ni-btn-theme-cosmos:hover,
-.ni-btn-container.ni-btn-theme-cosmos:active,
-.ni-btn-container.ni-btn-theme-cosmos.active,
-.ni-btn-container.ni-btn-theme-cosmos.router-link-active {
+.ni-btn:hover .ni-btn-container.ni-btn-theme-cosmos,
+.ni-btn:focus .ni-btn-container.ni-btn-theme-cosmos,
+.ni-btn:active .ni-btn-container.ni-btn-theme-cosmos,
+.ni-btn.router-link-active .ni-btn-container.ni-btn-theme-cosmos {
   color: hsl(210,32%,86%);
   border-color: hsl(210,26%,36%);
 }
