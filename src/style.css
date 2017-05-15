@@ -6,6 +6,7 @@
   -webkit-appearance: none;
   margin: 0;
   display: inline-block;
+  font-size: 16px;
 }
 /* fix firefox padding */
 .ni-btn::-moz-focus-inner {
@@ -19,7 +20,7 @@
 }
 .ni-btn-container {
   font-family: system, -apple-system, BlinkMacSystemFont, "Roboto", "Seogue UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-  font-size: 16px !important;
+  font-size: 1rem !important;
   font-weight: 400;
   height: 2em;
   line-height: 1;
@@ -57,7 +58,7 @@
   opacity: 0.333;
   cursor: not-allowed;
   user-select: none;
-  color: #999;
+  color: #999 !important;
 }
 .ni-btn-container.disabled:focus, .ni-btn[disabled]:focus {
   outline: none;
@@ -92,7 +93,7 @@
 }
 
 .ni-btn-container.ni-btn-theme-alpha-black {
-  color: #fff;
+  color: #fff !important;
   background: hsla(0,0%,0%,0.2);
   border: none;
 }
@@ -100,7 +101,7 @@
 .ni-btn-container.ni-btn-theme-alpha-black:active { background: hsla(0,0%,0%,0.4); }
 
 .ni-btn-container.ni-btn-theme-tendermint {
-  color: #fff;
+  color: #fff !important;
   background: hsl(210,70%,38%);
   border: none;
 }
