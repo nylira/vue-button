@@ -19,11 +19,11 @@
 }
 .ni-btn-container {
   font-family: system, -apple-system, BlinkMacSystemFont, "Roboto", "Seogue UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-  font-size: 16px;
+  font-size: 16px !important;
   font-weight: 400;
   height: 2em;
   line-height: 1;
-  color: #000;
+  color: #000 !important;
 
   padding: 0 0.75em;
   margin: 0;
@@ -113,9 +113,9 @@
   background: transparent;
   border: 2px solid hsl(210, 20%, 18%);
   border-radius: 0.25rem;
-  color: hsl(210, 32%, 50%);
+  color: hsl(210, 32%, 50%) !important;
   font-family: 'DIN', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.75rem !important;
   font-weight: 500;
   height: 2rem;
   padding: 0 1rem;
