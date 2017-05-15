@@ -1,5 +1,5 @@
 <template>
-  <router-link class="ni-btn" :to="to" v-if="type === 'link'">
+  <router-link class="ni-btn" :to="to" v-if="type === 'link'" exact>
     <span :class="btnClass">
       <i v-if="icon" :class="'ni-btn-icon fa fa-' + icon" aria-hidden="true"></i>
       <span class="ni-btn-value" v-if="value">{{ value }}</span>
