@@ -4,6 +4,7 @@
   background: transparent;
   -webkit-appearance: none;
   margin: 0;
+  display: inline-block;
 }
 /* fix firefox padding */
 .ni-btn-wrapper::-moz-focus-inner {
