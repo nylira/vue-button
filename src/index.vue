@@ -5,7 +5,7 @@
       <span class="ni-btn-value" v-if="value">{{ value }}</span>
     </span>
   </a>
-  <router-link class="ni-btn" v-else-if="type === 'router-link'">
+  <router-link class="ni-btn" v-else-if="type === 'link'">
     <span :class="btnClass">
       <i v-if="icon" :class="'ni-btn-icon fa fa-' + icon" aria-hidden="true"></i>
       <span class="ni-btn-value" v-if="value">{{ value }}</span>
