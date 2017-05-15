@@ -1,11 +1,11 @@
 <template>
-  <a class="ni-btn" v-if="btnType === 'anchor'">
+  <a class="ni-btn" v-if="type === 'anchor'">
     <span :class="btnClass">
       <i v-if="icon" :class="'ni-btn-icon fa fa-' + icon" aria-hidden="true"></i>
       <span class="ni-btn-value" v-if="value">{{ value }}</span>
     </span>
   </a>
-  <router-link class="ni-btn" v-else-if="btnType === 'router-link'">
+  <router-link class="ni-btn" v-else-if="type === 'router-link'">
     <span :class="btnClass">
       <i v-if="icon" :class="'ni-btn-icon fa fa-' + icon" aria-hidden="true"></i>
       <span class="ni-btn-value" v-if="value">{{ value }}</span>

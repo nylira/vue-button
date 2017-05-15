@@ -13,14 +13,15 @@
 }
 .ni-btn-container::before,
 .ni-btn-container::after {
-    content: '';
-    flex: 1 0 auto;
+  content: '';
+  flex: 1 0 auto;
 }
 .ni-btn-container {
   font-size: 16px;
   font-weight: 400;
   height: 2em;
   line-height: 1;
+  color: #000;
 
   padding: 0 0.75em;
   margin: 0;
