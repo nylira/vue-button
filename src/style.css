@@ -1,4 +1,4 @@
-.ni-btn-wrapper {
+.ni-btn {
   padding: 0;
   border: none;
   background: transparent;
@@ -7,16 +7,16 @@
   display: inline-block;
 }
 /* fix firefox padding */
-.ni-btn-wrapper::-moz-focus-inner {
+.ni-btn::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-.ni-btn::before,
-.ni-btn::after {
+.ni-btn-container::before,
+.ni-btn-container::after {
     content: '';
     flex: 1 0 auto;
 }
-.ni-btn {
+.ni-btn-container {
   font-size: 16px;
   font-weight: 400;
   height: 2em;
@@ -37,7 +37,7 @@
   -webkit-appearance: none;
 }
 
-.ni-btn:hover {
+.ni-btn-container:hover {
   color: #000;
   text-decoration: none;
 }
@@ -69,49 +69,54 @@
   padding-right: 0.5em;
 }
 
-.ni-btn.ni-btn-link {
-  border-color: transparent;
-  background: transparent;
-  color: #0c9;
-  padding: 0 0.5em;
-}
-.ni-btn.ni-btn-link:hover {
-  background: transparent;
-}
-
-.ni-btn.ni-btn-small {
+.ni-btn.ni-btn-size-sm {
   font-size: 0.75em;
   height: 1.5rem;
   line-height: 1rem;
   padding: 0 1rem;
 }
 
-.ni-btn.ni-btn-small i.fa {
+.ni-btn.ni-btn-size-sm i.fa {
   font-size: 0.75rem;
   line-height: 1;
 }
 
-.ni-btn.ni-btn-large {
+.ni-btn.ni-btn-size-lg {
   font-size: 1.125em;
   height: 3rem;
   font-weight: normal;
   padding: 0 1rem;
 }
 
-.ni-btn.ni-theme-alpha-black {
+.ni-btn-container.ni-btn-theme-alpha-black {
   color: #fff;
   background: hsla(0,0%,0%,0.2);
   border: none;
 }
-.ni-btn.ni-theme-alpha-black:hover { background: hsla(0,0%,0%,0.3); }
-.ni-btn.ni-theme-alpha-black:active { background: hsla(0,0%,0%,0.4); }
+.ni-btn-container.ni-btn-theme-alpha-black:hover { background: hsla(0,0%,0%,0.3); }
+.ni-btn-container.ni-btn-theme-alpha-black:active { background: hsla(0,0%,0%,0.4); }
 
-.ni-btn.ni-theme-tendermint {
+.ni-btn-container.ni-btn-theme-tendermint {
   color: #fff;
   background: hsl(210,70%,38%);
   border: none;
 }
-.ni-btn.ni-theme-tendermint:hover {
+.ni-btn-container.ni-btn-theme-tendermint:hover {
   background: hsl(210,70%,43%);
 }
-.ni-btn.ni-theme-tendermint:active { background: hsl(210,70%,8%); }
+.ni-btn-container.ni-btn-theme-tendermint:active { background: hsl(210,70%,8%); }
+
+.ni-btn-container.ni-btn-theme-cosmos {
+  background: transparent;
+  border: 2px solid hsl(210, 20%, 18%);
+  border-radius: 0.25rem;
+  color: hsl(mhue, 32%, 50%);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0 1rem;
+  text-transform: uppercase;
+}
+.ni-btn-container.ni-btn-theme-cosmos:hover {
+  color hsl(210,32%,86%)
+  border-color hsl(210,26%,36%)
+}

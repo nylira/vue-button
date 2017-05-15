@@ -1,17 +1,17 @@
 <template>
-  <a class="ni-btn-wrapper" v-if="btnType === 'anchor'">
+  <a class="ni-btn" v-if="btnType === 'anchor'">
     <span :class="btnClass">
       <i v-if="icon" :class="'ni-btn-icon fa fa-' + icon" aria-hidden="true"></i>
       <span class="ni-btn-value" v-if="value">{{ value }}</span>
     </span>
   </a>
-  <router-link class="ni-btn-wrapper" v-else-if="btnType === 'router-link'">
+  <router-link class="ni-btn" v-else-if="btnType === 'router-link'">
     <span :class="btnClass">
       <i v-if="icon" :class="'ni-btn-icon fa fa-' + icon" aria-hidden="true"></i>
       <span class="ni-btn-value" v-if="value">{{ value }}</span>
     </span>
   </router-link>
-  <button class="ni-btn-wrapper" :type="btnType" v-else>
+  <button class="ni-btn" :type="btnType" v-else>
     <span :class="btnClass">
       <i v-if="icon" :class="'ni-btn-icon fa fa-' + icon" aria-hidden="true"></i>
       <span class="ni-btn-value" v-if="value">{{ value }}</span>
@@ -24,12 +24,10 @@ export default {
   name: 'ni-btn',
   computed: {
     btnClass () {
-      let value = 'ni-btn'
-      if (this.iconPos === 'right') value += ' ni-btn-icon-right'
-      if (this.size === 'lg') value += ' ni-btn-large'
-      if (this.size === 'sm') value += ' ni-btn-small'
-      if (this.theme === 'alpha-black') value += ' ni-theme-alpha-black'
-      if (this.theme === 'tendermint') value += ' ni-theme-tendermint'
+      let value = 'ni-btn-container'
+      if (this.iconPos) value += ` ni-btn-icon-${this.iconPos}`
+      if (this.size) value += ` ni-btn-size-${this.size}`
+      if (this.theme) value += ` ni-btn-theme-${this.theme}`
       return value
     },
     btnType () {
