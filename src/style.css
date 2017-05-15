@@ -85,7 +85,7 @@
 }
 
 .ni-btn-container.ni-btn-size-lg {
-  font-size: 1.125em;
+  font-size: 1.125em !important;
   height: 3rem;
   font-weight: normal;
   padding: 0 1rem;
