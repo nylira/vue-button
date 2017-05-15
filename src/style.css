@@ -117,6 +117,6 @@
   text-transform: uppercase;
 }
 .ni-btn-container.ni-btn-theme-cosmos:hover {
-  color hsl(210,32%,86%)
-  border-color hsl(210,26%,36%)
+  color: hsl(210,32%,86%);
+  border-color: hsl(210,26%,36%);
 }
