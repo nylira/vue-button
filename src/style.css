@@ -114,6 +114,7 @@
   color: hsl(210, 32%, 50%);
   font-size: 0.75rem;
   font-weight: 500;
+  height: 2rem;
   padding: 0 1rem;
   text-transform: uppercase;
 }

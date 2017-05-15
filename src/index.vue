@@ -11,7 +11,7 @@
       <span class="ni-btn-value" v-if="value">{{ value }}</span>
     </span>
   </router-link>
-  <button class="ni-btn" :type="btnType" v-else>
+  <button class="ni-btn" :type="type" v-else>
     <span :class="btnClass">
       <i v-if="icon" :class="'ni-btn-icon fa fa-' + icon" aria-hidden="true"></i>
       <span class="ni-btn-value" v-if="value">{{ value }}</span>
@@ -29,10 +29,6 @@ export default {
       if (this.size) value += ` ni-btn-size-${this.size}`
       if (this.theme) value += ` ni-btn-theme-${this.theme}`
       return value
-    },
-    btnType () {
-      if (this.type) return this.type
-      else return 'button'
     }
   },
   props: ['value', 'icon', 'icon-pos', 'type', 'size', 'theme']
