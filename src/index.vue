@@ -1,16 +1,16 @@
 <template>
-  <a class="ni-btn" v-if="type === 'anchor'">
-    <span :class="btnClass">
-      <i v-if="icon" :class="'ni-btn-icon fa fa-' + icon" aria-hidden="true"></i>
-      <span class="ni-btn-value" v-if="value">{{ value }}</span>
-    </span>
-  </a>
-  <router-link class="ni-btn" v-else-if="type === 'link'">
+  <router-link class="ni-btn" v-if="type === 'link'">
     <span :class="btnClass">
       <i v-if="icon" :class="'ni-btn-icon fa fa-' + icon" aria-hidden="true"></i>
       <span class="ni-btn-value" v-if="value">{{ value }}</span>
     </span>
   </router-link>
+  <a class="ni-btn" v-else-if="type === 'anchor'">
+    <span :class="btnClass">
+      <i v-if="icon" :class="'ni-btn-icon fa fa-' + icon" aria-hidden="true"></i>
+      <span class="ni-btn-value" v-if="value">{{ value }}</span>
+    </span>
+  </a>
   <button class="ni-btn" :type="type" v-else>
     <span :class="btnClass">
       <i v-if="icon" :class="'ni-btn-icon fa fa-' + icon" aria-hidden="true"></i>
