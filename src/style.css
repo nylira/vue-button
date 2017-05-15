@@ -17,11 +17,13 @@
   flex: 1 0 auto;
 }
 .ni-btn-container {
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
   height: 2em;
   line-height: 1;
   color: #000;
+  text-decoration: none;
 
   padding: 0 0.75em;
   margin: 0;
@@ -112,6 +114,7 @@
   border: 2px solid hsl(210, 20%, 18%);
   border-radius: 0.25rem;
   color: hsl(210, 32%, 50%);
+  font-family: 'DIN', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
   height: 2rem;
