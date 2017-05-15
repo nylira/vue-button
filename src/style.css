@@ -51,38 +51,38 @@
   padding-left: 0.5em;
 }
 
-.ni-btn.disabled, .ni-btn[disabled] {
+.ni-btn-container.disabled, .ni-btn[disabled] {
   opacity: 0.333;
   cursor: not-allowed;
   user-select: none;
   color: #999;
 }
-.ni-btn.disabled:focus, .ni-btn[disabled]:focus {
+.ni-btn-container.disabled:focus, .ni-btn[disabled]:focus {
   outline: none;
 }
 
 /* right aligned icons */
-.ni-btn.ni-btn-icon-right {
+.ni-btn-container.ni-btn-icon-right {
   flex-direction: row-reverse;
 }
-.ni-btn.ni-btn-icon-right .ni-btn-icon + .ni-btn-value {
+.ni-btn-container.ni-btn-icon-right .ni-btn-icon + .ni-btn-value {
   padding-left: 0;
   padding-right: 0.5em;
 }
 
-.ni-btn.ni-btn-size-sm {
+.ni-btn-container.ni-btn-size-sm {
   font-size: 0.75em;
   height: 1.5rem;
   line-height: 1rem;
   padding: 0 1rem;
 }
 
-.ni-btn.ni-btn-size-sm i.fa {
+.ni-btn-container.ni-btn-size-sm i.fa {
   font-size: 0.75rem;
   line-height: 1;
 }
 
-.ni-btn.ni-btn-size-lg {
+.ni-btn-container.ni-btn-size-lg {
   font-size: 1.125em;
   height: 3rem;
   font-weight: normal;
@@ -122,3 +122,10 @@
   color: hsl(210,32%,86%);
   border-color: hsl(210,26%,36%);
 }
+.ni-btn-container.ni-btn-theme-cosmos:active,
+.ni-btn-container.ni-btn-theme-cosmos.active,
+.ni-btn-container.ni-btn-theme-cosmos.router-link-active {
+  border: 2px solid hsl(210, 20%, 18%);
+  color: hsl(210, 32%, 50%);
+}
+
