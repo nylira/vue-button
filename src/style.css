@@ -73,6 +73,7 @@
   padding-right: 0.5em;
 }
 
+/* sizes */
 .ni-btn-container.ni-btn-size-sm {
   font-size: 0.75em;
   height: 1.5rem;
@@ -110,6 +111,8 @@
 }
 .ni-btn-container.ni-btn-theme-tendermint:active { background: hsl(210,70%,8%); }
 
+/* cosmos */
+
 .ni-btn-container.ni-btn-theme-cosmos {
   background: transparent;
   border: 2px solid hsl(210, 20%, 18%);
@@ -130,4 +133,17 @@
 .ni-btn.router-link-active .ni-btn-container.ni-btn-theme-cosmos {
   color: hsl(210,32%,86%) !important;
   border-color: hsl(210,26%,36%);
+}
+.ni-btn-container.ni-btn-theme-cosmos.ni-btn-size-sm {
+  font-size: 0.666rem !important;
+  height: 1.5rem;
+  line-height: 1rem;
+  padding: 0 1rem;
+  border-width: 1px;
+}
+.ni-btn-container.ni-btn-theme-cosmos.ni-btn-size-sm i.fa {
+  font-size: 0.66rem;
+}
+.ni-btn-container.ni-btn-size-lg {
+  font-size: 1rem !important;
 }
