@@ -59,6 +59,7 @@
   opacity: 0.333;
   cursor: not-allowed;
   user-select: none;
+  pointer-events: none;
   color: #999 !important;
 }
 .ni-btn.disabled:focus, .ni-btn[disabled]:focus {
