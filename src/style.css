@@ -54,13 +54,14 @@
   padding-left: 0.5em;
 }
 
-.ni-btn-container.disabled, .ni-btn[disabled] {
+/* disabled */
+.ni-btn.disabled, .ni-btn[disabled] {
   opacity: 0.333;
   cursor: not-allowed;
   user-select: none;
   color: #999 !important;
 }
-.ni-btn-container.disabled:focus, .ni-btn[disabled]:focus {
+.ni-btn.disabled:focus, .ni-btn[disabled]:focus {
   outline: none;
 }
 
