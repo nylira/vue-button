@@ -56,8 +56,6 @@
 
 .ni-btn-value {
   white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 /* disabled */
