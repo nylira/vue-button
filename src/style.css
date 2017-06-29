@@ -150,20 +150,20 @@ bc-dim = hsl(mhue, 13%, 18%)
   border-color: hsl(210,93%,22%);
 }
 .ni-btn-container.ni-btn-theme-cosmos-alpha {
-  background: hsla(210, 0%, 0%, 0.15);
-  border: 2px solid hsl(210,0%,18%);
+  background: hsla(0,0%,0%,0.15);
+  border: 2px solid hsl(210,10%,18%);
   color: hsl(210, 4%, 91%) !important;
   font-family: 'DIN', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   padding: 0 1rem;
 }
 .ni-btn:hover:enabled .ni-btn-container.ni-btn-theme-cosmos-alpha,
 .ni-btn:focus:enabled .ni-btn-container.ni-btn-theme-cosmos-alpha {
-  background: hsla(210, 0%, 0%, 0.10);
-  border-color: hsl(210,0%,23%);
+  background: hsla(0,0%,0%,0.10);
+  border-color: hsl(210,10%,23%);
 }
 .ni-btn:active:enabled .ni-btn-container.ni-btn-theme-cosmos-alpha,
 .ni-btn.router-link-active:enabled .ni-btn-container.ni-btn-theme-cosmos-alpha {
   color: hsl(0,0%,70%) !important;
-  background: hsla(210, 0%, 0%, 0.20);
-  border-color: hsl(210,0%,15%);
+  background: hsla(0,0%,0%,0.20);
+  border-color: hsl(210,10%,15%);
 }
