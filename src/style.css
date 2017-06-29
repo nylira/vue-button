@@ -56,6 +56,8 @@
 
 .ni-btn-value {
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 /* disabled */
@@ -118,38 +120,40 @@
 .ni-btn-container.ni-btn-theme-tendermint:active:enabled { background: hsl(210,70%,8%); }
 
 /* cosmos */
+/*
+btn-alpha = hsla(0,0,0,0.15)
+btn-primary = hsl(210, 93%, 39%)
+btn-secondary = hsl(210, 10%, 20%)
+bright = hsl(210, 4%, 91%)
+txt = hsl(0, 0%, 70%)
+dim = hsl(210, 4%, 38%)
+*/
 
 .ni-btn-container.ni-btn-theme-cosmos {
-  background: transparent;
-  border: 2px solid hsl(210, 20%, 18%);
-  border-radius: 0.25rem;
-  color: hsl(210, 32%, 50%) !important;
+  background: hsl(210, 93%, 39%);
+  color: hsl(210, 4%, 91%) !important;
   font-family: 'DIN', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-  font-size: 0.75rem !important;
-  font-weight: 500;
-  height: 2rem;
-  padding: 0 1rem;
-  text-transform: uppercase;
 }
 .ni-btn:hover:enabled .ni-btn-container.ni-btn-theme-cosmos,
 .ni-btn:focus:enabled .ni-btn-container.ni-btn-theme-cosmos {
-  border-color: hsl(210,26%,36%);
+  background: hsl(210,93%,49%);
 }
 .ni-btn:active:enabled .ni-btn-container.ni-btn-theme-cosmos,
 .ni-btn.router-link-active:enabled .ni-btn-container.ni-btn-theme-cosmos {
-  color: hsl(210,32%,86%) !important;
-  border-color: hsl(210,26%,36%);
+  color: hsl(0,0%,70%) !important;
+  border-color: hsl(210,93%,29%);
 }
-.ni-btn-container.ni-btn-theme-cosmos.ni-btn-size-sm {
-  font-size: 0.666rem !important;
-  height: 1.5rem;
-  line-height: 1rem;
-  padding: 0 1rem;
-  border-width: 1px;
+.ni-btn-container.ni-btn-theme-cosmos-alpha {
+  background: hsla(210, 0%, 0%, 0.15);
+  color: hsl(210, 4%, 91%) !important;
+  font-family: 'DIN', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 }
-.ni-btn-container.ni-btn-theme-cosmos.ni-btn-size-sm i.fa {
-  font-size: 0.66rem;
+.ni-btn:hover:enabled .ni-btn-container.ni-btn-theme-cosmos-alpha,
+.ni-btn:focus:enabled .ni-btn-container.ni-btn-theme-cosmos-alpha {
+  background: hsla(210, 0%, 0%, 0.10);
 }
-.ni-btn-container.ni-btn-size-lg {
-  font-size: 1rem !important;
+.ni-btn:active:enabled .ni-btn-container.ni-btn-theme-cosmos-alpha,
+.ni-btn.router-link-active:enabled .ni-btn-container.ni-btn-theme-cosmos-alpha {
+  color: hsl(0,0%,70%) !important;
+  background: hsla(210, 0%, 0%, 0.20);
 }
