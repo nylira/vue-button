@@ -127,33 +127,43 @@ btn-secondary = hsl(210, 10%, 20%)
 bright = hsl(210, 4%, 91%)
 txt = hsl(0, 0%, 70%)
 dim = hsl(210, 4%, 38%)
+bc = hsl(mhue, 12%, 23%)
+bc-dim = hsl(mhue, 13%, 18%)
 */
 
 .ni-btn-container.ni-btn-theme-cosmos {
   background: hsl(210, 93%, 39%);
+  border: 1px solid hsl(210, 93%, 29%);
   color: hsl(210, 4%, 91%) !important;
   font-family: 'DIN', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  padding: 0 1rem;
 }
 .ni-btn:hover:enabled .ni-btn-container.ni-btn-theme-cosmos,
 .ni-btn:focus:enabled .ni-btn-container.ni-btn-theme-cosmos {
   background: hsl(210,93%,49%);
+  border-color: hsl(210, 93%, 36%);
 }
 .ni-btn:active:enabled .ni-btn-container.ni-btn-theme-cosmos,
 .ni-btn.router-link-active:enabled .ni-btn-container.ni-btn-theme-cosmos {
   color: hsl(0,0%,70%) !important;
-  border-color: hsl(210,93%,29%);
+  background: hsl(210,93%,29%);
+  border-color: hsl(210,93%,22%);
 }
 .ni-btn-container.ni-btn-theme-cosmos-alpha {
   background: hsla(210, 0%, 0%, 0.15);
+  border: 2px solid hsl(210,0%,18%);
   color: hsl(210, 4%, 91%) !important;
   font-family: 'DIN', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  padding: 0 1rem;
 }
 .ni-btn:hover:enabled .ni-btn-container.ni-btn-theme-cosmos-alpha,
 .ni-btn:focus:enabled .ni-btn-container.ni-btn-theme-cosmos-alpha {
   background: hsla(210, 0%, 0%, 0.10);
+  border-color: hsl(210,0%,23%);
 }
 .ni-btn:active:enabled .ni-btn-container.ni-btn-theme-cosmos-alpha,
 .ni-btn.router-link-active:enabled .ni-btn-container.ni-btn-theme-cosmos-alpha {
   color: hsl(0,0%,70%) !important;
   background: hsla(210, 0%, 0%, 0.20);
+  border-color: hsl(210,0%,15%);
 }
