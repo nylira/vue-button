@@ -1,7 +1,7 @@
 {
   "name": "@nylira/vue-button",
-  "version": "3.3.2",
-  "description": "Button component for Vue 2.",
+  "version": "4.0.0",
+  "description": "Flexible component for Vue 2 that works for `<a>`, `<button>` and  `<router-link>`. Icons require Material Icons from Google.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
