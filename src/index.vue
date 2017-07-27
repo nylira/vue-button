@@ -1,15 +1,15 @@
 <template lang='pug'>
 router-link.ni-btn(:to='to', v-if="type === 'link'", exact='')
   span(:class='btnClass')
-    i(v-if='icon', :class="'ni-icon material-icons'" aria-hidden='true') {{ icon }}
+    i(v-if='icon', :class="'ni-btn-icon material-icons'" aria-hidden='true') {{ icon }}
     span.ni-btn-value(v-if='value') {{ value }}
 a.ni-btn(v-else-if="type === 'anchor'")
   span(:class='btnClass')
-    i(v-if='icon', :class="'ni-icon material-icons'" aria-hidden='true') {{ icon }}
+    i(v-if='icon', :class="'ni-btn-icon material-icons'" aria-hidden='true') {{ icon }}
     span.ni-btn-value(v-if='value') {{ value }}
 button.ni-btn(:type='type', v-else='')
   span(:class='btnClass')
-    i(v-if='icon', :class="'ni-icon material-icons'" aria-hidden='true') {{ icon }}
+    i(v-if='icon', :class="'ni-btn-icon material-icons'" aria-hidden='true') {{ icon }}
     span.ni-btn-value(v-if='value') {{ value }}
 </template>
 
@@ -19,7 +19,7 @@ export default {
   computed: {
     btnClass () {
       let value = 'ni-btn-container'
-      if (this.iconPos) value += ` ni-icon-${this.iconPos}`
+      if (this.iconPos) value += ` ni-btn-icon-${this.iconPos}`
       if (this.size) value += ` ni-btn-size-${this.size}`
       if (this.theme) value += ` ni-btn-theme-${this.theme}`
       return value
@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style lang='stylus'>
-sans = -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif
+@require '~@/styles/variables.styl'
 
 .ni-btn
   padding 0
@@ -58,11 +58,11 @@ sans = -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI"
   font-weight 400
   height 2em
   line-height 1
-  color #000 !important
+  color txt !important
   padding 0 0.75em
   margin 0
-  background #fff
-  border 1px solid #ccc
+  background app-bg
+  border 1px solid bc
   cursor pointer
   user-select none
   display flex
@@ -71,14 +71,14 @@ sans = -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI"
   -webkit-appearance none
 
 .ni-btn-container:hover:enabled
-  color #000
+  color txt
   text-decoration none
 
-.ni-icon
+.ni-btn-icon
   font-size 1em
   line-height 1
 
-.ni-icon + .ni-btn-value
+.ni-btn-icon + .ni-btn-value
   padding-left 0.5em
 
 .ni-btn-value
@@ -93,16 +93,16 @@ sans = -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI"
   cursor not-allowed
   user-select none
   pointer-events none
-  color #999 !important
+  color faint !important
 
   &:focus:enabled
     outline none
 
 /* right aligned icons */
-.ni-btn-container.ni-icon-right
+.ni-btn-container.ni-btn-icon-right
   flex-direction row-reverse
 
-  .ni-icon + .ni-btn-value
+  .ni-btn-icon + .ni-btn-value
     padding-left 0
     padding-right 0.5em
 
@@ -150,19 +150,18 @@ sans = -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI"
 // cosmos
 .ni-btn-container.ni-btn-theme-cosmos
   background transparent
-  border 2px solid hsl(210, 20%, 18%)
+  border 2px solid bc-dim
   border-radius 0.25rem
-  color #9ab2cb !important
+  color txt
   font-family sans
   padding 0 1rem
-  font-weight 300
 
 .ni-btn:hover:enabled .ni-btn-container.ni-btn-theme-cosmos,
 .ni-btn:focus:enabled .ni-btn-container.ni-btn-theme-cosmos
-  border-color #065cb1
+  border-color bc-hover
 
 .ni-btn:active:enabled .ni-btn-container.ni-btn-theme-cosmos,
 .ni-btn.router-link-active:enabled .ni-btn-container.ni-btn-theme-cosmos
-  color #b3b3b3 !important
-  border-color #04386c
+  color bright !important
+  border-color bc-active
 </style>
