@@ -62,7 +62,8 @@ export default {
   padding 0 0.75em
   margin 0
   background app-bg
-  border 1px solid bc
+  border 2px solid bc
+  border-radius 0.25rem
   cursor pointer
   user-select none
   display flex
@@ -73,13 +74,15 @@ export default {
 .ni-btn-container:hover:enabled
   color txt
   text-decoration none
+  border-color bc-bright
+  background app-fg
 
 .ni-btn-icon
   font-size 1em
   line-height 1
 
 .ni-btn-icon + .ni-btn-value
-  padding-left 0.5em
+  padding-left 0.375em
 
 .ni-btn-value
   white-space nowrap
@@ -93,7 +96,7 @@ export default {
   cursor not-allowed
   user-select none
   pointer-events none
-  color faint !important
+  color dim !important
 
   &:focus:enabled
     outline none
@@ -129,6 +132,7 @@ export default {
   color #fff !important
   background rgba(0,0,0,0.2)
   border none
+  border-radius 0
 
   &:hover:enabled
     background rgba(0,0,0,0.3)
@@ -140,28 +144,11 @@ export default {
   color #fff !important
   background #1d61a5
   border none
+  border-radius 0
 
   &:hover:enabled
     background #216eba
 
   &:active:enabled
     background #061423
-
-// cosmos
-.ni-btn-container.ni-btn-theme-cosmos
-  background transparent
-  border 2px solid bc-dim
-  border-radius 0.25rem
-  color txt
-  font-family sans
-  padding 0 1rem
-
-.ni-btn:hover:enabled .ni-btn-container.ni-btn-theme-cosmos,
-.ni-btn:focus:enabled .ni-btn-container.ni-btn-theme-cosmos
-  border-color bc-hover
-
-.ni-btn:active:enabled .ni-btn-container.ni-btn-theme-cosmos,
-.ni-btn.router-link-active:enabled .ni-btn-container.ni-btn-theme-cosmos
-  color bright !important
-  border-color bc-active
 </style>
