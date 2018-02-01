@@ -90,10 +90,11 @@ export default {
   height 1.6em
 
 .ni-btn__value
+  line-height 1.5
   font-weight 300
   white-space nowrap
   text-overflow ellipsis
-  overflow-x hidden
+  overflow hidden
 
 /* disabled */
 .ni-btn.disabled
