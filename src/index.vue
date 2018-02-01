@@ -9,8 +9,14 @@ a.ni-btn(v-else-if="type === 'anchor'")
     span.ni-btn__value(v-if='value') {{ value }}
 button.ni-btn(:type='type' v-else)
   span(:class='btnClass')
+<<<<<<< HEAD
     i(v-if='icon', :class="'ni-btn__icon material-icons'" aria-hidden='true') {{ icon }}
     span.ni-btn__value(v-if='value') {{ value }}
+=======
+    i(v-if='icon', :class="'ni-btn-icon material-icons'" aria-hidden='true') {{ icon }}
+    img(v-if='!icon && img', :src="img" :class="'ni-btn-img'" aria-hidden='true')
+    span.ni-btn-value(v-if='value') {{ value }}
+>>>>>>> 93b7a110646bc5ad7d47e2759d1533fc1a08fff9
 </template>
 
 <script>
@@ -26,7 +32,7 @@ export default {
       return value
     }
   },
-  props: ['value', 'icon', 'icon-pos', 'type', 'size', 'theme', 'to']
+  props: ['value', 'icon', 'icon-pos', 'img', 'type', 'size', 'theme', 'to']
 }
 </script>
 
@@ -82,11 +88,22 @@ export default {
   font-size 1em
   line-height 1
 
+<<<<<<< HEAD
 .ni-btn__icon + .ni-btn__value
   padding-left 0.375em
 
 .ni-btn__value
   font-weight 300
+=======
+.ni-btn-icon + .ni-btn-value, .ni-btn-img + .ni-btn-value
+  padding-left 0.375em
+
+.ni-btn-img
+  height 1.6em
+
+
+.ni-btn-value
+>>>>>>> 93b7a110646bc5ad7d47e2759d1533fc1a08fff9
   white-space nowrap
   text-overflow ellipsis
   overflow-x hidden
