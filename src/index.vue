@@ -1,16 +1,16 @@
 <template lang='pug'>
-router-link.ni-btn(:to='to', v-if="type === 'link'", exact='')
+router-link.ni-btn(:to='to' v-if="type === 'link'" exact)
   span(:class='btnClass')
-    i(v-if='icon', :class="'ni-btn-icon material-icons'" aria-hidden='true') {{ icon }}
-    span.ni-btn-value(v-if='value') {{ value }}
+    i(v-if='icon', :class="'ni-btn__icon material-icons'" aria-hidden='true') {{ icon }}
+    span.ni-btn__value(v-if='value') {{ value }}
 a.ni-btn(v-else-if="type === 'anchor'")
   span(:class='btnClass')
-    i(v-if='icon', :class="'ni-btn-icon material-icons'" aria-hidden='true') {{ icon }}
-    span.ni-btn-value(v-if='value') {{ value }}
-button.ni-btn(:type='type', v-else='')
+    i(v-if='icon', :class="'ni-btn__icon material-icons'" aria-hidden='true') {{ icon }}
+    span.ni-btn__value(v-if='value') {{ value }}
+button.ni-btn(:type='type' v-else)
   span(:class='btnClass')
-    i(v-if='icon', :class="'ni-btn-icon material-icons'" aria-hidden='true') {{ icon }}
-    span.ni-btn-value(v-if='value') {{ value }}
+    i(v-if='icon', :class="'ni-btn__icon material-icons'" aria-hidden='true') {{ icon }}
+    span.ni-btn__value(v-if='value') {{ value }}
 </template>
 
 <script>
@@ -18,10 +18,11 @@ export default {
   name: 'ni-btn',
   computed: {
     btnClass () {
-      let value = 'ni-btn-container'
-      if (this.iconPos) value += ` ni-btn-icon-${this.iconPos}`
-      if (this.size) value += ` ni-btn-size-${this.size}`
-      if (this.theme) value += ` ni-btn-theme-${this.theme}`
+      let value = 'ni-btn__container'
+      if (this.iconPos) value += ` ni-btn__icon-${this.iconPos}`
+      if (this.size) value += ` ni-btn--size-${this.size}`
+      if (this.theme) value += ` ni-btn--theme-${this.theme}`
+      if (this.type) value += ` ni-btn--`${this.type}`
       return value
     }
   },
@@ -47,12 +48,12 @@ export default {
   padding 0
   border 0
 
-.ni-btn-container::before,
-.ni-btn-container::after
+.ni-btn__container::before,
+.ni-btn__container::after
   content ''
   flex 1 0 auto
 
-.ni-btn-container
+.ni-btn__container
   font-family sans
   font-size 1rem !important
   font-weight 400
@@ -71,23 +72,24 @@ export default {
   align-items center
   -webkit-appearance none
 
-.ni-btn-container:hover:enabled
+.ni-btn__container:hover:enabled
   color txt
   text-decoration none
   border-color bc-bright
   background app-fg
 
-.ni-btn-icon
+.ni-btn__icon
   font-size 1em
   line-height 1
 
-.ni-btn-icon + .ni-btn-value
+.ni-btn__icon + .ni-btn__value
   padding-left 0.375em
 
-.ni-btn-value
+.ni-btn__value
+  font-weight 300
   white-space nowrap
   text-overflow ellipsis
-  overflow hidden
+  overflow-x hidden
 
 /* disabled */
 .ni-btn.disabled
@@ -102,15 +104,15 @@ export default {
     outline none
 
 /* right aligned icons */
-.ni-btn-container.ni-btn-icon-right
+.ni-btn__container.ni-btn__icon-right
   flex-direction row-reverse
 
-  .ni-btn-icon + .ni-btn-value
+  .ni-btn__icon + .ni-btn__value
     padding-left 0
     padding-right 0.5em
 
 /* sizes */
-.ni-btn-container.ni-btn-size-sm
+.ni-btn__container.ni-btn--size-sm
   font-size 0.75em
   height 1.5rem
   line-height 1rem
@@ -119,16 +121,16 @@ export default {
   i.fa, i.material-icons
     font-size 0.75rem
     line-height 1
-  .ni-btn-value
+  .ni-btn__value
     font-size 0.75rem
 
-.ni-btn-container.ni-btn-size-lg
+.ni-btn__container.ni-btn--size-lg
   font-size 1.125em !important
   height 3rem
   font-weight normal
   padding 0 1rem
 
-.ni-btn-container.ni-btn-theme-alpha-black
+.ni-btn__container.ni-btn--theme-alpha-black
   color #fff !important
   background rgba(0,0,0,0.2)
   border none
@@ -140,7 +142,7 @@ export default {
   &:active:enabled
     background rgba(0,0,0,0.4)
 
-.ni-btn-container.ni-btn-theme-tendermint
+.ni-btn__container.ni-btn--theme-tendermint
   color #fff !important
   background #1d61a5
   border none
@@ -151,4 +153,14 @@ export default {
 
   &:active:enabled
     background #061423
+
+.ni-btn.ni-btn--primary
+  .ni-btn__container
+    background darken(link, 10%)
+    border-color darken(link, 25%)
+    &:hover
+      background link
+      border-color darken(link, 12.5%)
+    .ni-btn__value
+      color bright
 </style>
