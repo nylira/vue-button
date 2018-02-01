@@ -11,7 +11,7 @@ button.ni-btn(:type='type' v-else)
   span(:class='btnClass')
     i(v-if='icon', :class="'ni-btn__icon material-icons'" aria-hidden='true') {{ icon }}
     img(v-if='!icon && img', :src="img" :class="'ni-btn__img'" aria-hidden='true')
-    span.ni-btn-value(v-if='value') {{ value }}
+    span.ni-btn__value(v-if='value') {{ value }}
 </template>
 
 <script>
@@ -83,13 +83,13 @@ export default {
   font-size 1em
   line-height 1
 
-.ni-btn__icon + .ni-btn-value, .ni-btn__img + .ni-btn-value
+.ni-btn__icon + .ni-btn__value, .ni-btn__img + .ni-btn__value
   padding-left 0.375em
 
 .ni-btn__img
   height 1.6em
 
-.ni-btn-value
+.ni-btn__value
   font-weight 300
   white-space nowrap
   text-overflow ellipsis
@@ -113,7 +113,7 @@ export default {
 
   .ni-btn__icon + .ni-btn__value
     padding-left 0
-    padding-right 0.5em
+    padding-right 0.375em
 
 /* sizes */
 .ni-btn__container.ni-btn--size-sm
@@ -158,13 +158,12 @@ export default {
   &:active:enabled
     background #061423
 
-.ni-btn.ni-btn--primary
-  .ni-btn__container
-    background darken(link, 10%)
-    border-color darken(link, 25%)
-    &:hover
-      background link
-      border-color darken(link, 12.5%)
-    .ni-btn__value
-      color bright
+.ni-btn__container.ni-btn--primary
+  background darken(link, 10%)
+  border-color darken(link, 25%)
+  &:hover
+    background link
+    border-color darken(link, 12.5%)
+  .ni-btn__value
+    color bright
 </style>
