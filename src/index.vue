@@ -23,11 +23,11 @@ export default {
       if (this.iconPos) value += ` ni-btn__icon-${this.iconPos}`
       if (this.size) value += ` ni-btn--size-${this.size}`
       if (this.theme) value += ` ni-btn--theme-${this.theme}`
-      if (this.type) value += ` ni-btn--${this.type}`
+      if (this.color) value += ` ni-btn--${this.color}`
       return value
     }
   },
-  props: ['value', 'icon', 'icon-pos', 'img', 'type', 'size', 'theme', 'to']
+  props: ['value', 'icon', 'icon-pos', 'img', 'type', 'size', 'theme', 'to', 'color']
 }
 </script>
 
