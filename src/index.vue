@@ -166,4 +166,31 @@ export default {
     border-color darken(link, 12.5%)
   .ni-btn__value
     color bright
+
+.ni-btn__container.ni-btn--success
+  background darken(success, 10%)
+  border-color darken(success, 25%)
+  &:hover
+    background success
+    border-color darken(success, 12.5%)
+  .ni-btn__value
+    color bright
+
+.ni-btn__container.ni-btn--warning
+  background darken(warning, 10%)
+  border-color darken(warning, 25%)
+  &:hover
+    background warning
+    border-color darken(warning, 12.5%)
+  .ni-btn__value
+    color bright
+
+.ni-btn__container.ni-btn--danger
+  background darken(danger, 10%)
+  border-color darken(danger, 25%)
+  &:hover
+    background danger
+    border-color darken(danger, 12.5%)
+  .ni-btn__value
+    color bright
 </style>
