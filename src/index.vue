@@ -10,6 +10,7 @@ a.ni-btn(v-else-if="type === 'anchor'")
 button.ni-btn(:type='type', v-else='')
   span(:class='btnClass')
     i(v-if='icon', :class="'ni-btn-icon material-icons'" aria-hidden='true') {{ icon }}
+    img(v-if='!icon && img', :src="img" :class="'ni-btn-img'" aria-hidden='true')
     span.ni-btn-value(v-if='value') {{ value }}
 </template>
 
@@ -25,7 +26,7 @@ export default {
       return value
     }
   },
-  props: ['value', 'icon', 'icon-pos', 'type', 'size', 'theme', 'to']
+  props: ['value', 'icon', 'icon-pos', 'img', 'type', 'size', 'theme', 'to']
 }
 </script>
 
@@ -81,8 +82,12 @@ export default {
   font-size 1em
   line-height 1
 
-.ni-btn-icon + .ni-btn-value
+.ni-btn-icon + .ni-btn-value, .ni-btn-img + .ni-btn-value
   padding-left 0.375em
+
+.ni-btn-img
+  height 1.6em
+
 
 .ni-btn-value
   white-space nowrap
