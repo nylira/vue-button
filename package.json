@@ -1,6 +1,6 @@
 {
   "name": "@nylira/vue-button",
-  "version": "4.3.2",
+  "version": "4.4.0",
   "description": "Flexible component for Vue 2 that works for `<a>`, `<button>` and  `<router-link>`. Icons require Material Icons from Google.",
   "main": "index.js",
   "scripts": {

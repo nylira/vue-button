@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style lang='stylus'>
-@require '~@/styles/variables.styl'
+@require '~variables'
 
 .ni-btn
   padding 0
@@ -60,11 +60,11 @@ export default {
   font-weight 400
   height 2em
   line-height 1
-  color txt !important
+  color var(--txt, #333) !important
   padding 0 0.75em
   margin 0
-  background app-bg
-  border 2px solid bc
+  background var(--app-bg, #fff)
+  border 2px solid var(--bc, #ddd)
   border-radius 0.25rem
   cursor pointer
   user-select none
@@ -74,10 +74,10 @@ export default {
   -webkit-appearance none
 
 .ni-btn__container:hover:enabled
-  color txt
+  color var(--txt, #333)
   text-decoration none
-  border-color bc-bright
-  background app-fg
+  border-color var(--bc, #ddd)
+  background var(--app-fg, #eee)
 
 .ni-btn__icon
   font-size 1em
@@ -103,7 +103,7 @@ export default {
   cursor not-allowed
   user-select none
   pointer-events none
-  color dim !important
+  color var(--dim, #666) !important
 
   &:focus:enabled
     outline none
@@ -160,38 +160,23 @@ export default {
     background #061423
 
 .ni-btn__container.ni-btn--primary
-  background darken(link, 10%)
-  border-color darken(link, 25%)
-  &:hover
-    background link
-    border-color darken(link, 12.5%)
+  background var(--primary, #99f)
+  border-color var(--primary-bc, #00f)
   .ni-btn__value
-    color bright
+    color var(--bright, #000)
 
 .ni-btn__container.ni-btn--success
-  background darken(success, 10%)
-  border-color darken(success, 25%)
-  &:hover
-    background success
-    border-color darken(success, 12.5%)
+  border-color var(--success-bc, #0f0)
   .ni-btn__value
-    color bright
+    color var(--bright, #000)
 
 .ni-btn__container.ni-btn--warning
-  background darken(warning, 10%)
-  border-color darken(warning, 25%)
-  &:hover
-    background warning
-    border-color darken(warning, 12.5%)
+  border-color var(--warning-bc, #f90)
   .ni-btn__value
-    color bright
+    color var(--bright, #000)
 
 .ni-btn__container.ni-btn--danger
-  background darken(danger, 10%)
-  border-color darken(danger, 25%)
-  &:hover
-    background danger
-    border-color darken(danger, 12.5%)
+  border-color var(--danger-bc, #f00)
   .ni-btn__value
-    color bright
+    color var(--bright, #000)
 </style>
