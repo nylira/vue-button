@@ -1,7 +1,8 @@
 {
   "name": "@nylira/vue-button",
-  "version": "4.4.0",
-  "description": "Flexible component for Vue 2 that works for `<a>`, `<button>` and  `<router-link>`. Icons require Material Icons from Google.",
+  "version": "4.4.1",
+  "description":
+    "Flexible component for Vue 2 that works for `<a>`, `<button>` and  `<router-link>`. Icons require Material Icons from Google.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/nylira/vue-button.git"
   },
-  "keywords": [
-    "button",
-    "vue",
-    "component"
-  ],
+  "keywords": ["button", "vue", "component"],
   "author": "Peng Zhong <peng@nylira.com>",
   "license": "MIT",
   "bugs": {

@@ -18,17 +18,27 @@ button.ni-btn(:type='type' v-else)
 export default {
   name: 'ni-btn',
   computed: {
-    btnClass () {
-      let value = 'ni-btn__container'
-      if (this.iconPos) value += ` ni-btn__icon-${this.iconPos}`
-      if (this.size) value += ` ni-btn--size-${this.size}`
-      if (this.theme) value += ` ni-btn--theme-${this.theme}`
-      if (this.color) value += ` ni-btn--${this.color}`
-      return value
-    }
+    btnClass() {
+      let value = 'ni-btn__container';
+      if (this.iconPos) value += ` ni-btn__icon-${this.iconPos}`;
+      if (this.size) value += ` ni-btn--size-${this.size}`;
+      if (this.theme) value += ` ni-btn--theme-${this.theme}`;
+      if (this.color) value += ` ni-btn--${this.color}`;
+      return value;
+    },
   },
-  props: ['value', 'icon', 'icon-pos', 'img', 'type', 'size', 'theme', 'to', 'color']
-}
+  props: [
+    'value',
+    'icon',
+    'icon-pos',
+    'img',
+    'type',
+    'size',
+    'theme',
+    'to',
+    'color',
+  ],
+};
 </script>
 
 <style lang='stylus'>
@@ -91,7 +101,6 @@ export default {
 
 .ni-btn__value
   line-height 1.5
-  font-weight 300
   white-space nowrap
   text-overflow ellipsis
   overflow hidden
@@ -135,32 +144,7 @@ export default {
   font-weight normal
   padding 0 1rem
 
-.ni-btn__container.ni-btn--theme-alpha-black
-  color #fff !important
-  background rgba(0,0,0,0.2)
-  border none
-  border-radius 0
-
-  &:hover:enabled
-    background rgba(0,0,0,0.3)
-
-  &:active:enabled
-    background rgba(0,0,0,0.4)
-
-.ni-btn__container.ni-btn--theme-tendermint
-  color #fff !important
-  background #1d61a5
-  border none
-  border-radius 0
-
-  &:hover:enabled
-    background #216eba
-
-  &:active:enabled
-    background #061423
-
 .ni-btn__container.ni-btn--primary
-  background var(--primary, #99f)
   border-color var(--primary-bc, #00f)
   .ni-btn__value
     color var(--bright, #000)
