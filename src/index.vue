@@ -147,10 +147,10 @@ export default {
 .ni-btn__container.ni-btn--primary
   background var(--primary, #99f)
   border-color var(--primary-bc, #00f)
+  i.fa, i.material-icons
+    color hsla(0,0,100%,0.667)
   .ni-btn__value
-    color var(--bright, #000)
     color #fff
-    font-weight 500
 
 .ni-btn__container.ni-btn--success
   border-color var(--success-bc, #0f0)
